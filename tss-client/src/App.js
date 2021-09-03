@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import NavBar from "./NavBar";
+
+import "./App.css"
+import headerImg from "./client-header.jpg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="header-wrapper">
+        <img src={headerImg} alt="Twinlande header"></img>
+      </div>
+
+      <NavBar/>
+
     </div>
+
   );
 }
 

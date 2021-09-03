@@ -1,0 +1,36 @@
+.nav-wrapper
+{
+    border: 2px solid red !important;
+    background-color: #e0ad75;
+}
+
+.twinlande-brand
+{
+    font-weight: bold;
+}
+
+.nav-container
+{
+    border: 2px solid blue !important;
+
+}
+
+.category-ctr
+{
+    border: 2px solid blue !important;
+    overflow: hidden;
+}
+    .nav-category
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+.user-options
+{
+    border: 2px solid blue !important;
+    margin-left: 8px;
+}
