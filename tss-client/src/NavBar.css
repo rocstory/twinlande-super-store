@@ -1,36 +1,81 @@
 .nav-wrapper
 {
-    border: 2px solid red !important;
-    background-color: #e0ad75;
+    /* border: 2px solid red !important; */
+    background-color: #1C3144;
+    color: white;
 }
 
 .twinlande-brand
 {
+    margin-left: 0.3em;
     font-weight: bold;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
 }
-
-.nav-container
-{
-    border: 2px solid blue !important;
-
-}
-
-.category-ctr
-{
-    border: 2px solid blue !important;
-    overflow: hidden;
-}
-    .nav-category
+    .twinlande-brand > *
     {
-        margin-left: 5px;
-        margin-right: 5px;
+        /* border: 2px solid blue; */
         text-align: center;
-        font-weight: bold;
-        cursor: pointer;
     }
+
+    .brand-icon
+    {
+        font-size: 1.4em;
+        color: white;
+    }
+    .brand-name
+    {
+        font-size: .8em;
+        color: white;
+    }
+
+.nav-cntr
+{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+    .category-ctr
+    {
+        border: 2px solid blue !important;
+        overflow: hidden;
+    }
+        .nav-category
+        {
+            border: 2px solid green;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
 .user-options
 {
-    border: 2px solid blue !important;
+    border: 2px solid red !important;
     margin-left: 8px;
-}
+    display: flex;
+    flex-direction: row;
+    
+}   
+    .user-option
+    {
+        border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bold;
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+    }
+    .uo-icon
+    {
+        /* border: 2px solid green; */
+        font-size: 1.3em;
+    }
+    .uo-label
+    {
+        /* border: 2px solid green; */
+        font-size: 0.6em;
+    }

@@ -1,6 +1,9 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import SearchBar from "./SearchBar";
+
 
 import "./NavBar.css"
 
@@ -15,13 +18,15 @@ function NavBar() {
             <Navbar.Brand
                 className="twinlande-brand"
             >
-                <span>
-                    [icon]
+                <span className="brand-icon">
+                    <FontAwesomeIcon icon={['fas', 'store-alt']} />
                 </span>
-                Twinlande
+                <span className="brand-name" >Twinlande</span>
             </Navbar.Brand>
 
-            <div className="container">
+            <div className="container nav-cntr">
+                <SearchBar />
+
                 <Nav className="category-ctr justify-content-center container">
                     <Nav.Item className="nav-category">Video Games</Nav.Item>
                     <Nav.Item className="nav-category">Toys</Nav.Item>
@@ -33,17 +38,21 @@ function NavBar() {
                 </Nav>
 
                 <Nav className="user-options justify-content-end">
-                    <Nav.Item className="nav-category">
-                        <span>
-                            [icon]
+                    <Nav.Item className="user-option">
+                        <span className="uo-icon">
+                            <FontAwesomeIcon icon={['fas', 'shopping-cart']} />
                         </span>
-                        Cart
+                        <span className="uo-label">
+                            Cart
+                        </span>
                     </Nav.Item>
-                    <Nav.Item className="nav-category">
-                        <span>
-                            [icon]
+                    <Nav.Item className="user-option">
+                        <span className="uo-icon">
+                            <FontAwesomeIcon icon={['fas', 'user-alt']} />
                         </span>
-                        Profile
+                        <span className="uo-label">
+                            Profile
+                        </span>
                     </Nav.Item>
                 </Nav>
             </div>

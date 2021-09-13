@@ -1,0 +1,11 @@
+.search-bar
+{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+}
+    .search-btn
+    {
+        border: 2px solid rgb(36, 35, 35);
+        background-color: #FEBD69;
+    }
