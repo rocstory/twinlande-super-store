@@ -5,9 +5,13 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 import './SearchBar.css';
+
 function SearchBar() {
     return (
-        <Form className='search-bar'>
+        <Form 
+            className='search-bar'
+            onClick={(e) => {e.preventDefault()}}
+        >
             <Form.Control 
                 className="search-input"
                 type="text" 
