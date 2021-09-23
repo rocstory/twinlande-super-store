@@ -2,7 +2,7 @@
 import NavBar from "./NavBar";
 
 import "./App.css"
-import headerImg from "./client-header.jpg";
+import headerImg from "./client-header-b.jpg";
 
 function App() {
   return (

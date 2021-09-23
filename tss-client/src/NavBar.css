@@ -1,13 +1,13 @@
 .nav-wrapper
 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: #1C3144;
     color: white;
+    overflow: hidden;
 }
 
 .twinlande-brand
 {
-    /* border: 2px solid green; */
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -30,27 +30,27 @@
 
 .nav-cntr
 {
-    /* border: 2px solid green; */
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
-    
-    overflow: hidden;
 }
     .user-opt-cntr
     {
-        /* border: 2px solid green; */
+        /* border: 2px solid lightgreen; */
         display: flex;
         flex-direction: column;
+        /* max-width: 80%; */
     }
         .search-wrapper
         {
             /* border: 2px solid blue; */
-            width: 25em;
+            /* width: 25em; */
+            min-width: 12em;
             margin: auto;
         }
         .category-ctr
         {
-            /* border: 2px solid blue !important; */
+            /* border: 2px solid red !important; */
             overflow: hidden;
         }
             .nav-category
@@ -61,14 +61,15 @@
                 text-align: center;
                 font-weight: bold;
                 cursor: pointer;
+                white-space: nowrap;
             }
 
     .user-options
     {
-        /* border: 2px solid green !important; */
-        /* margin-left: 8px; */
+        /* border: 2px solid yellow !important; */
         display: flex;
         flex-direction: row;
+        /* max-width: 19%; */
         
     }   
         .user-option
@@ -89,5 +90,24 @@
         .uo-label
         {
             /* border: 2px solid green; */
-            font-size: 0.5em;
+            font-size: 0.8em;
         }
+
+
+@media only screen and (max-width: 425px) 
+{
+    .nav-cntr
+    {
+        max-width: 100%;
+        overflow: hidden;
+    }
+        .user-opt-cntr
+        {
+            max-width: 70%;
+        }
+
+        .user-options
+        {
+            max-width: 30%;
+        }   
+}

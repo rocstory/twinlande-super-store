@@ -32,7 +32,7 @@ function NavBar() {
                     </div>
                     
                     <Nav className="category-ctr justify-content-center container">
-                        <Nav.Item className="nav-category">Video</Nav.Item>
+                        <Nav.Item className="nav-category">Video Games</Nav.Item>
                         <Nav.Item className="nav-category">Toys</Nav.Item>
                         <Nav.Item className="nav-category">Grocery</Nav.Item>
                         <Nav.Item className="nav-category">Electronics</Nav.Item>
