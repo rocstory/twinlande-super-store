@@ -8,6 +8,10 @@ import SearchBar from "./SearchBar";
 import "./NavBar.css"
 
 function NavBar() {
+
+    const categories = ['Video Games', 'Toys', 'Grocery',
+                        'Electronics', 'Health', 'Books',
+                        'Movies']
     return (
         <Navbar
             // bg="light"
@@ -32,13 +36,12 @@ function NavBar() {
                     </div>
                     
                     <Nav className="category-ctr justify-content-center container">
-                        <Nav.Item className="nav-category">Video Games</Nav.Item>
-                        <Nav.Item className="nav-category">Toys</Nav.Item>
-                        <Nav.Item className="nav-category">Grocery</Nav.Item>
-                        <Nav.Item className="nav-category">Electronics</Nav.Item>
-                        <Nav.Item className="nav-category">Health</Nav.Item>
-                        <Nav.Item className="nav-category">Books</Nav.Item>
-                        <Nav.Item className="nav-category">Movies</Nav.Item>
+                        {
+                            categories.map(category => 
+                                <Nav.Item className="nav-category">
+                                    {category}
+                                </Nav.Item>)
+                        }
                     </Nav>
                 </div>
                     <Nav className="user-options justify-content-end">
