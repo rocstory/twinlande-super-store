@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import SearchBar from "./SearchBar";
+import Badge from "react-bootstrap/Badge";
 
 
 import "./NavBar.css"
@@ -46,9 +47,12 @@ function NavBar() {
                 </div>
                     <Nav className="user-options justify-content-end">
                         <Nav.Item className="user-option">
-                            <span className="uo-icon">
-                                <FontAwesomeIcon icon={['fas', 'shopping-cart']} />
-                            </span>
+                            <div className="cart-icon-container">
+                                <span className="uo-icon">
+                                    <FontAwesomeIcon icon={['fas', 'shopping-cart']} />
+                                </span>
+                                <Badge className="items-in-cart">0</Badge>
+                            </div>
                             <span className="uo-label">
                                 Cart
                             </span>

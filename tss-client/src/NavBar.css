@@ -74,22 +74,42 @@
     }   
         .user-option
         {
-            /* border: 2px solid green; */
+            border: 2px solid red;
             display: flex;
             flex-direction: column;
             text-align: center;
             font-weight: bold;
             margin-left: 0.4em;
             margin-right: 0.4em;
+            
         }
+            .cart-icon-container
+            {
+                border: 2px solid yellow;
+                position: relative;
+            }
+            .cart-icon-container > .uo-icon
+            {
+                position: relative;
+                z-index: 0;
+                
+            }
+            .items-in-cart
+            {
+                position:relative;
+                border: 2px solid red;
+                z-index: 10;
+                top: 0px;
+                
+            }
         .uo-icon
         {
-            /* border: 2px solid green; */
+            border: 2px solid lightgreen;
             font-size: 1.7em;
         }
+        
         .uo-label
         {
-            /* border: 2px solid green; */
             font-size: 0.8em;
         }
 
