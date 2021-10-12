@@ -36,7 +36,7 @@
 }
     .user-opt-cntr
     {
-        /* border: 2px solid lightgreen; */
+        border: 2px solid lightgreen;
         display: flex;
         flex-direction: column;
         /* max-width: 80%; */
@@ -50,7 +50,7 @@
         }
         .category-ctr
         {
-            /* border: 2px solid red !important; */
+            border: 2px solid red !important;
             overflow: hidden;
         }
             .nav-category

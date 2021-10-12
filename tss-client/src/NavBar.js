@@ -40,7 +40,7 @@ function NavBar() {
                     <Nav className="category-ctr justify-content-center container">
                         {
                             categories.map(category =>
-                                <Nav.Item className="nav-category">
+                                <Nav.Item key={category} className="nav-category">
                                     {category}
                                 </Nav.Item>)
                         }
