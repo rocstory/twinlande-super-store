@@ -16,7 +16,6 @@ function NavBar() {
         'Movies']
     return (
         <Navbar
-            // bg="light"
             sticky="top"
             variant="light"
             className="nav-wrapper justify-content-center"

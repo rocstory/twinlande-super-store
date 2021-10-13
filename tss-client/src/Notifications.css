@@ -1,0 +1,5 @@
+.notification-container{
+    border: 2px solid blue;
+    display: inline-block !important;
+    flex-direction: row;
+}

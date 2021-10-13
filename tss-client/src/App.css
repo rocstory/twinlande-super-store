@@ -1,11 +1,15 @@
 .header-wrapper
 {
-    /* border: 2px solid red; */
     height: 20em;
-    
 }
-    .header-wrapper img
+    .header-wrapper
     {
         width: 100%;
-        height: 100%;
+        height: 30em;
     }
+        .header-wrapper img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: fill; 
+        }

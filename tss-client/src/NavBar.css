@@ -1,6 +1,5 @@
 .nav-wrapper
 {
-    /* border: 2px solid red; */
     background-color: #1C3144;
     color: white;
     overflow: hidden;
@@ -30,32 +29,25 @@
 
 .nav-cntr
 {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
 }
     .user-opt-cntr
     {
-        border: 2px solid lightgreen;
         display: flex;
         flex-direction: column;
-        /* max-width: 80%; */
     }
         .search-wrapper
         {
-            /* border: 2px solid blue; */
-            /* width: 25em; */
             min-width: 12em;
             margin: auto;
         }
         .category-ctr
         {
-            border: 2px solid red !important;
             overflow: hidden;
         }
             .nav-category
             {
-                /* border: 2px solid green; */
                 margin-left: 5px;
                 margin-right: 5px;
                 text-align: center;
@@ -72,7 +64,6 @@
     }   
         .user-option
         {
-            /* border: 2px solid red; */
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -81,22 +72,12 @@
             margin-right: 0.4em;
             
         }
-            .uo-icon-wrapper
-            {
-                /* border: 2px solid lightblue; */
-            }
                 .uo-icon
                 {
-                    /* border: 2px solid pink; */
                     font-size: 1.8em;
                 }
-            .uo-label-wrapper
-            {
-                /* border: 2px solid lightgreen; */
-            }
                 .uo-label
                 {
-                    /* border: 2px solid pink; */
                     font-size: 0.9em;
 
                 }
