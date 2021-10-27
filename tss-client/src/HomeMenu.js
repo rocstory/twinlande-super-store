@@ -8,7 +8,7 @@ function HomeMenu() {
     return (
         <div className="home-menu">
             <Notifications/>
-            <div className="home-ad">
+            <div className="side-bar">
                 <span>?</span>
             </div>
         </div>
