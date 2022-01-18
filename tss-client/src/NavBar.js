@@ -6,52 +6,65 @@ import SearchBar from "./SearchBar";
 import Cart from "./CartTrigger";
 import Profile from "./ProfileTrigger";
 
+import "./NavBar.css";
 
-import "./NavBar.css"
+function NavBar(prop) {
+  const categories = [
+    "Video Games",
+    "Toys",
+    "Grocery",
+    "Electronics",
+    "Health",
+    "Books",
+    "Movies",
+  ];
 
-function NavBar() {
+  const handleSelCategory = (categoryName) => {
+    // i forgot what to write...
+    // tssContext.setCurrentMenu(PROD_LISTING)
+    // prop.setSelCategory(categoryName)
+  };
 
-    const categories = ['Video Games', 'Toys', 'Grocery',
-        'Electronics', 'Health', 'Books',
-        'Movies']
-    return (
-        <Navbar
-            sticky="top"
-            variant="light"
-            className="nav-wrapper justify-content-center"
-        >
-            <Navbar.Brand
-                className="twinlande-brand"
-            >
-                <span className="brand-icon">
-                    <FontAwesomeIcon icon={['fas', 'store-alt']} />
-                </span>
-                <span className="brand-name" >Twinlande</span>
-            </Navbar.Brand>
+  return (
+    <Navbar
+      sticky="top"
+      variant="light"
+      className="nav-wrapper justify-content-center"
+    >
+      <Navbar.Brand className="twinlande-brand">
+        <span className="brand-icon">
+          <FontAwesomeIcon icon={["fas", "store-alt"]} />
+        </span>
+        <span className="brand-name">Twinlande</span>
+      </Navbar.Brand>
 
-            <div className="nav-cntr">
+      <div className="nav-cntr">
+        <div className="user-opt-cntr">
+          <div className="search-wrapper">
+            <SearchBar />
+          </div>
 
-                <div className="user-opt-cntr">
-                    <div className="search-wrapper">
-                        <SearchBar />
-                    </div>
-
-                    <Nav className="category-ctr justify-content-center container">
-                        {
-                            categories.map(category =>
-                                <Nav.Item key={category} className="nav-category">
-                                    {category}
-                                </Nav.Item>)
-                        }
-                    </Nav>
-                </div>
-                <Nav className="user-options justify-content-end">
-                    <Cart />
-                    <Profile />
-                </Nav>
-            </div>
-        </Navbar>
-    );
+          <Nav className="category-ctr justify-content-center container">
+            {categories.map((category) => (
+              <Nav.Item
+                key={category}
+                className="nav-category"
+                onClick={() => {
+                  handleSelCategory(category);
+                }}
+              >
+                {category}
+              </Nav.Item>
+            ))}
+          </Nav>
+        </div>
+        <Nav className="user-options justify-content-end">
+          <Cart />
+          <Profile />
+        </Nav>
+      </div>
+    </Navbar>
+  );
 }
 
 export default NavBar;
