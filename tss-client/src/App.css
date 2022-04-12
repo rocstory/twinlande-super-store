@@ -1,15 +1,3 @@
-.header-wrapper
-{
-    height: 20em;
+.App {
+  /* background-color: black; */
 }
-    .header-wrapper
-    {
-        width: 100%;
-        height: 30em;
-    }
-        .header-wrapper img
-        {
-            width: 100%;
-            height: 100%;
-            object-fit: fill; 
-        }

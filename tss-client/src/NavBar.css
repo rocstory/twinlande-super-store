@@ -1,101 +1,81 @@
-.nav-wrapper
-{
-    background-color: #1C3144;
-    color: white;
+.nav-wrapper {
+  background-color: #2b8069;
+  color: #f8f8f8;
+  overflow: hidden;
+}
+
+.twinlande-brand {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.twinlande-brand > * {
+  text-align: center;
+}
+
+.brand-icon {
+  font-size: 1.4em;
+  color: white;
+}
+.brand-name {
+  font-size: 0.8em;
+  color: white;
+}
+
+.nav-cntr {
+  display: flex;
+  flex-direction: row;
+}
+.user-opt-cntr {
+  display: flex;
+  flex-direction: column;
+}
+.search-wrapper {
+  min-width: 12em;
+  margin: auto;
+}
+.category-ctr {
+  overflow: hidden;
+}
+.nav-category {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.user-options {
+  display: flex;
+  flex-direction: row;
+}
+.user-option {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+.uo-icon {
+  font-size: 1.8em;
+}
+.uo-label {
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 425px) {
+  .nav-cntr {
+    max-width: 100%;
     overflow: hidden;
-}
+  }
+  .user-opt-cntr {
+    max-width: 70%;
+  }
 
-.twinlande-brand
-{
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-}
-    .twinlande-brand > *
-    {
-        text-align: center;
-    }
-
-    .brand-icon
-    {
-        font-size: 1.4em;
-        color: white;
-    }
-    .brand-name
-    {
-        font-size: .8em;
-        color: white;
-    }
-
-.nav-cntr
-{
-    display: flex;
-    flex-direction: row;
-}
-    .user-opt-cntr
-    {
-        display: flex;
-        flex-direction: column;
-    }
-        .search-wrapper
-        {
-            min-width: 12em;
-            margin: auto;
-        }
-        .category-ctr
-        {
-            overflow: hidden;
-        }
-            .nav-category
-            {
-                margin-left: 5px;
-                margin-right: 5px;
-                text-align: center;
-                font-weight: bold;
-                cursor: pointer;
-                white-space: nowrap;
-            }
-
-    .user-options
-    {
-        display: flex;
-        flex-direction: row;
-        
-    }   
-        .user-option
-        {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            font-weight: bold;
-            margin-left: 0.4em;
-            margin-right: 0.4em;
-            
-        }
-                .uo-icon
-                {
-                    font-size: 1.8em;
-                }
-                .uo-label
-                {
-                    font-size: 0.9em;
-
-                }
-
-@media only screen and (max-width: 425px) 
-{
-    .nav-cntr
-    {
-        max-width: 100%;
-        overflow: hidden;
-    }
-        .user-opt-cntr
-        {
-            max-width: 70%;
-        }
-
-        .user-options
-        {
-            max-width: 30%;
-        }   
+  .user-options {
+    max-width: 30%;
+  }
 }
