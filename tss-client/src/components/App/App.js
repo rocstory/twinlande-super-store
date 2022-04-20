@@ -1,5 +1,5 @@
-import NavBar from "./NavBar";
-import HomeMenu from "./HomeMenu";
+import NavBar from "../NavBar/NavBar";
+import HomeMenu from "../HomeMenu/HomeMenu";
 
 import "./App.css";
 

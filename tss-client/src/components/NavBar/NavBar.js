@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import SearchBar from "./SearchBar";
-import Cart from "./CartTrigger";
-import Profile from "./ProfileTrigger";
+import SearchBar from "../SearchBar/SearchBar";
+import Cart from "../CartTrigger/CartTrigger";
+import Profile from "../ProfileTrigger/ProfileTrigger";
 
 import "./NavBar.css";
 
