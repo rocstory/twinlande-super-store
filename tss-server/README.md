@@ -1,8 +1,8 @@
-# Twinlande Superstore (TSS) - Client 🌱
+# Twinlande Superstore (TSS) - Server 🌱
 
 - [TSS General](../README.md)
-- TSS Client
-- [TSS Server](../tss-server/README.md)
+- [TSS Client](../tss-client/README.md)
+- TSS Server
 - [TSS Database](../tss-database/README.md)
 
 ## Demo 🔗

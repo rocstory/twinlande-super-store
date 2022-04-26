@@ -1,15 +1,13 @@
-# Twinlande Superstore (TSS) - Client 🌱
+# Twinlande Superstore (TSS) - Database 🌱
 
 - [TSS General](../README.md)
-- TSS Client
+- [TSS Client](../tss-client/README.md)
 - [TSS Server](../tss-server/README.md)
-- [TSS Database](../tss-database/README.md)
+- TSS Database
 
 ## Demo 🔗
 
-Click here to see Twinlande Super Store
-
-_client is currently not live, we're getting there..._
+Demo is not available
 
 ## Table of Content 📄
 
@@ -24,8 +22,6 @@ _client is currently not live, we're getting there..._
 Twinlande Superstore is a web app for Twinlande a fictional superstore owned by Dlo and Dife.
 
 ## Technologies
-
-- React
 
 ## Setup
 
