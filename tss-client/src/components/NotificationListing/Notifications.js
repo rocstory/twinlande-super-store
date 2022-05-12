@@ -2,10 +2,10 @@ import React from "react";
 
 import Notification from "../Notification/Notification";
 import "./Notifications.css";
-import pawbytesNotificationImg from "../../assets/cafe-shop.jpg";
-import parkingSpacesNotificationImg from "../../assets/parking-space.jpg";
-import nowHiringNotificationImg from "../../assets/hiring.jpg";
-import newPlantsNotificationImg from "../../assets/plants2.jpg";
+import pawbytesNotificationImg from "../../assets/images/notifications/cafe-shop.jpg";
+import parkingSpacesNotificationImg from "../../assets/images/notifications/parking-space.jpg";
+import nowHiringNotificationImg from "../../assets/images/notifications/hiring.jpg";
+import newPlantsNotificationImg from "../../assets/images/notifications/plants2.jpg";
 
 function Notifications() {
   return (

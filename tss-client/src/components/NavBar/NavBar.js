@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import SearchBar from "../SearchBar/SearchBar";
 import Cart from "../CartTrigger/CartTrigger";
 import Profile from "../ProfileTrigger/ProfileTrigger";
+import { TSSContext } from "../../contexts/TSSContext";
+import appConfig from "../../appConfig.json"
 
 import "./NavBar.css";
 
-function NavBar(prop) {
+function NavBar() {
+  const { setSelProductCategory, setCurrentPage } = useContext(TSSContext);
+  const { TSS_Pages } = appConfig
   const categories = [
     "Video Games",
     "Toys",
@@ -20,10 +24,14 @@ function NavBar(prop) {
   ];
 
   const handleSelCategory = (categoryName) => {
-    // i forgot what to write...
-    // tssContext.setCurrentMenu(PROD_LISTING)
-    // prop.setSelCategory(categoryName)
+    setSelProductCategory(categoryName)
+    setCurrentPage(TSS_Pages.Products)
   };
+
+  const handleBrandSelection = () => {
+    setSelProductCategory(undefined)
+    setCurrentPage(TSS_Pages.Home)
+  }
 
   return (
     <Navbar
@@ -31,7 +39,10 @@ function NavBar(prop) {
       variant="light"
       className="nav-wrapper justify-content-center"
     >
-      <Navbar.Brand className="twinlande-brand">
+      <Navbar.Brand
+        className="twinlande-brand"
+        onClick={handleBrandSelection}
+      >
         <span className="brand-icon">
           <FontAwesomeIcon icon={["fas", "store-alt"]} />
         </span>

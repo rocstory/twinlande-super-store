@@ -2,15 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/App/App";
+import { TSSContextProvider } from "./contexts/TSSContext";
 import reportWebVitals from "./reportWebVitals";
 import "./services/fontawesome";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <TSSContextProvider >
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </TSSContextProvider>,
   document.getElementById("root")
 );
 
