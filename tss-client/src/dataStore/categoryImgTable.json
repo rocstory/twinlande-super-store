@@ -1,0 +1,10 @@
+[
+    {
+        "categoryCodes": ["vg0"],
+        "imageCode": "video-game"
+    },
+    {
+        "categoryCodes": ["vg1"],
+        "imageCode": "game-accessory"
+    }
+]

@@ -6,32 +6,19 @@ import SearchBar from "../SearchBar/SearchBar";
 import Cart from "../CartTrigger/CartTrigger";
 import Profile from "../ProfileTrigger/ProfileTrigger";
 import { TSSContext } from "../../contexts/TSSContext";
+import useNavBar from "./useNavBar";
 import appConfig from "../../appConfig.json"
 
 import "./NavBar.css";
 
 function NavBar() {
-  const { setSelProductCategory, setCurrentPage } = useContext(TSSContext);
-  const { TSS_Pages } = appConfig
-  const categories = [
-    "Video Games",
-    "Toys",
-    "Grocery",
-    "Electronics",
-    "Health",
-    "Books",
-    "Movies",
-  ];
+  const {
+    categories,
+    handleSelCategory,
+    handleBrandSelection
+  } = useNavBar();
 
-  const handleSelCategory = (categoryName) => {
-    setSelProductCategory(categoryName)
-    setCurrentPage(TSS_Pages.Products)
-  };
 
-  const handleBrandSelection = () => {
-    setSelProductCategory(undefined)
-    setCurrentPage(TSS_Pages.Home)
-  }
 
   return (
     <Navbar
@@ -58,13 +45,13 @@ function NavBar() {
           <Nav className="category-ctr justify-content-center container">
             {categories.map((category) => (
               <Nav.Item
-                key={category}
+                key={category.code}
                 className="nav-category"
                 onClick={() => {
                   handleSelCategory(category);
                 }}
               >
-                {category}
+                {category.name.toLowerCase()}
               </Nav.Item>
             ))}
           </Nav>

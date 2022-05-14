@@ -1,22 +1,29 @@
-import React, { useContext } from "react";
-import { TSSContext } from "../../contexts/TSSContext";
+import React from "react";
+import useProductsDisplay from "./useProductDisplay";
 import "./ProductsDisplay.css";
 import Product from "./Product/Product";
 
 function ProductsDisplay() {
-    // const { selProductCategory } = useContext(TSSContext);
+    const {
+        products
+    } = useProductsDisplay();
 
-    return (
+    return products ? (
         <div
             className="products-display"
         >
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-
+            {
+                products.map((product, index) =>
+                    <Product
+                        key={index}
+                        product={product}
+                    />
+                )
+            }
         </div>
-    );
+    )
+        :
+        (<div>Loading...</div>);
 }
 
 export default ProductsDisplay;

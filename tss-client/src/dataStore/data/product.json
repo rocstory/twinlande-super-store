@@ -1,0 +1,65 @@
+[
+    {
+        "pid": 0,
+        "name": "Cars 4 Us",
+        "price": 1.90,
+        "rating": 0,
+        "category": "vg0"
+    },
+    {
+        "pid": 1,
+        "name": "Bit Tower",
+        "price": 9876543.95,
+        "rating": 1,
+        "category": "vg0"
+    },
+    {
+        "pid": 2,
+        "name": "Colonial Carnival RPS",
+        "price": 5874839.246,
+        "rating": 2,
+        "category": "vg0"
+    },
+    {
+        "pid": 3,
+        "name": "Rev Roc",
+        "price": 2.9498,
+        "rating": 3,
+        "category": "vg0"
+    },
+    {
+        "pid": 4,
+        "name": "Chev's Escape",
+        "price": 32.90987,
+        "rating": 4,
+        "category": "vg0"
+    },
+    {
+        "pid": 5,
+        "name": "Fox Forest",
+        "price": 0.25,
+        "rating": 5,
+        "category": "vg1"
+    },
+    {
+        "pid": 6,
+        "name": "Bit Toy",
+        "price": 0.25,
+        "rating": 3,
+        "category": "ty0"
+    },
+    {
+        "pid": 7,
+        "name": "Paw Byte Paw Plushie",
+        "price": 5.00,
+        "rating": 5,
+        "category": "ty1"
+    },
+    {
+        "pid": 8,
+        "name": "Chev Action Figure",
+        "price": 809.02,
+        "rating": 4,
+        "category": "ty0"
+    }
+]

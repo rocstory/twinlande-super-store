@@ -2,5 +2,10 @@
     "TSS_Pages": {
         "Home": "Home",
         "Products": "Products"
-    }
+    },
+    "ProductImageCodes": {
+        "VideoGame": "video-game",
+        "GameAccessory": "game-accessory"
+    },
+    "MaxStarRating": 5
 }
