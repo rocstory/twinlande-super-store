@@ -16,6 +16,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <div >
+        {process.env.NODE_ENV}
+      </div>
       {isHomePageSelected && <HomePage />}
       {isProductsPageSelected && <ProductsPage />}
     </div>
