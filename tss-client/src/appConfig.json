@@ -7,5 +7,6 @@
         "VideoGame": "video-game",
         "GameAccessory": "game-accessory"
     },
-    "MaxStarRating": 5
+    "MaxStarRating": 5,
+    "ReadDataFromDatabase": false
 }

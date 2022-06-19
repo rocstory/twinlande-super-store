@@ -6,6 +6,7 @@ import { TSS_Pages } from "../../appConfig.json"
 import ProductsPage from "../../pages/ProductsPage/ProductsPage";
 
 import "./App.css";
+import Footer from "../Footer/Footer";
 
 
 function App() {
@@ -16,11 +17,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div >
-        {process.env.NODE_ENV}
-      </div>
       {isHomePageSelected && <HomePage />}
       {isProductsPageSelected && <ProductsPage />}
+
+      <Footer />
+
     </div>
   );
 }

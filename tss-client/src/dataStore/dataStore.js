@@ -1,8 +1,33 @@
 const productCollection = require('./data/product.json');
 const majorCategoryCollection = require('./data/majorCategory.json');
+const appConfig = require("../appConfig.json");
 
-export const getProducts = (categoryCode) => {
+const isLocalEnv = (process.env.NODE_ENV === "development");
+const readDataFromDB = isLocalEnv && appConfig.ReadDataFromDatabase;
+
+export const getProducts = async (categoryCode) => {
     // check if category code is a major code
+    let products = [];
+    if (readDataFromDB) {
+        try {
+            products = await getProductsFromDatabase(categoryCode);
+        }
+        catch (error) {
+            console.error(error);
+        }
+    }
+    else {
+        products = getProductsFromDataStore(categoryCode);
+    }
+
+    return products;
+}
+
+const getProductsFromDatabase = async (categoryCode) => {
+    return [];
+}
+
+const getProductsFromDataStore = (categoryCode) => {
     const products = []
     const isMajorCode = majorCategoryCollection.find(category => category.code === categoryCode)
 
@@ -24,6 +49,27 @@ export const getProducts = (categoryCode) => {
 
 
 
-export const getMajorCategories = () => {
-    return majorCategoryCollection;
+export const getMajorCategories = async () => {
+
+    if (readDataFromDB) {
+        try {
+            let majCats = await getMajCategoriesFromDatabase();
+            return majCats;
+        }
+        catch (error) {
+            console.error(error);
+        }
+    }
+    else {
+        let majCats = getMajCategoriesFromDataStore();
+        return majCats;
+    }
+}
+
+const getMajCategoriesFromDatabase = async () => {
+    return [];
+}
+
+const getMajCategoriesFromDataStore = () => {
+    return majorCategoryCollection
 }
