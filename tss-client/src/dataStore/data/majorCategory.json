@@ -3,23 +3,23 @@
         "name": "video games",
         "code": "vg",
         "subCategories": ["vg0", "vg1"]
-    }
-    ,{
+    },
+    {
         "name": "toys",
         "code": "ty",
         "subCategories": ["ty0","ty1"]
-    }
-    ,{
+    },
+    {
         "name": "Electronics",
         "code": "et",
         "subCategories": ["et0","et1"]
-    }
-    ,{
+    },
+    {
         "name": "Books",
         "code": "bk",
         "subCategories": ["bk0","bk1"]
-    }
-    ,{
+    },
+    {
         "name": "mOvies",
         "code": "mv",
         "subCategories": ["mv0","mv1"]
