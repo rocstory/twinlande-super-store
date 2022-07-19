@@ -2,13 +2,17 @@ import React, { useContext } from "react";
 import Card from "react-bootstrap/esm/Card";
 import Button from "react-bootstrap/esm/Button";
 import { TSSContext } from "../../../contexts/TSSContext";
-import { MaxStarRating } from "../../../appConfig.json";
+// import { MaxStarRating } from "../../../appConfig.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useProduct from "./useProduct";
 import "./Product.css";
 
+const appConfig = require('../../../appConfig.json')
+
+
 
 function Product({ product }) {
+    const { MaxStarRating } = appConfig
     const {
         name,
         price,

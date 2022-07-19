@@ -8,7 +8,8 @@ import VideoGameIcon from "../assets/images/products/video-game-icon.png";
 import GameAccessoryIcon from "../assets/images/products/gaming-accessories-icon.png";
 import DefaultIcon from "../assets/images/products/default-prod-icon.png";
 
-import { ProductImageCodes } from "../appConfig.json";
+const { ProductImageCodes } = require('../appConfig.json')
+
 
 const categoryImgTable = require("../dataStore/categoryImgTable.json")
 
