@@ -8,6 +8,7 @@ import useProduct from "./useProduct";
 import "./Product.css";
 
 const appConfig = require('../../../appConfig.json')
+const productHelper = require('../../../helpers/product');
 
 
 
@@ -18,6 +19,8 @@ function Product({ product }) {
         price,
         rating
     } = product
+
+    const formattedPrice = productHelper.getFormattedCurrency(price);
 
     const {
         prodImage,
@@ -61,7 +64,7 @@ function Product({ product }) {
                 <Card.Title
                     className="prod-details"
                 >
-                    <p className="prod-price">{`$${price}`}</p>
+                    <p className="prod-price">{formattedPrice}</p>
                     <p className="prod-rating">
                         {starRating}
                     </p>
