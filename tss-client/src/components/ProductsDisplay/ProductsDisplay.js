@@ -10,7 +10,7 @@ function ProductsDisplay() {
 
     return products ? (
         <div
-            className="products-display"
+            className="products-display grid-wrapper"
         >
             {
                 products.map((product, index) =>
