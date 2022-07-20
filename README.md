@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5316fb7f-e1e6-4ed7-ad6b-804d7d74fa78/deploy-status)](https://app.netlify.com/sites/twinlande/deploys)
+
 # Twinlande Super Store (TSS) 🌱 - General
 
 Twinlande Superstore is a web applicaiton built with the amazing help of people on Tiktok, Instagram, and other social media platforms. The project is built in multiple components as shown below.
