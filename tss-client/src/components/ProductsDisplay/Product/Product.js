@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import Card from "react-bootstrap/esm/Card";
 import Button from "react-bootstrap/esm/Button";
-import { TSSContext } from "../../../contexts/TSSContext";
 // import { MaxStarRating } from "../../../appConfig.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useProduct from "./useProduct";

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+
 const productService = require('../../../services/product');
 
 function useProduct(product) {

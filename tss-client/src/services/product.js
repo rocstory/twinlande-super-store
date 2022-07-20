@@ -1,4 +1,4 @@
-import BookIcon from "../assets/images/products/book-icon.png";
+
 // import JournalIcon from "../assets/images/products/journal-icon.png";
 // import MovieIcon from "../assets/images/products/movie-icon.png";
 // import MusicAccessoryIcon from "../assets/images/products/music-accessories.png";

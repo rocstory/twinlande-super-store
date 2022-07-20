@@ -1,13 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import SearchBar from "../SearchBar/SearchBar";
 import Cart from "../CartTrigger/CartTrigger";
 import Profile from "../ProfileTrigger/ProfileTrigger";
-import { TSSContext } from "../../contexts/TSSContext";
 import useNavBar from "./useNavBar";
-import appConfig from "../../appConfig.json"
 
 import "./NavBar.css";
 
