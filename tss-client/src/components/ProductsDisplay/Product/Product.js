@@ -23,6 +23,7 @@ function Product({ product }) {
 
     const {
         prodImage,
+        handleAddToCart
     } = useProduct(product);
 
     const handleProductRating = () => {
@@ -81,6 +82,7 @@ function Product({ product }) {
                 <Button
                     variant="primary"
                     className="prod-btn"
+                    onClick={() => { handleAddToCart(product) }}
                 >Add To Cart</Button>
             </Card.Body>
         </Card>

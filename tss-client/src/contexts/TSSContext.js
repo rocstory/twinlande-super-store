@@ -9,12 +9,14 @@ const TSSContextProvider = ({ children }) => {
     const [itemsInCart, setItemsInCart] = useState([]);
     const [selProductCategory, setSelProductCategory] = useState(undefined)
     const [currentPage, setCurrentPage] = useState(TSS_Pages.Home);
+    const [cartList, setCartList] = useState([]);
 
     return (
         <TSSContext.Provider value={{
             itemsInCart, setItemsInCart,
             selProductCategory, setSelProductCategory,
-            currentPage, setCurrentPage
+            currentPage, setCurrentPage,
+            cartList, setCartList
         }} >
             {children}
         </TSSContext.Provider>

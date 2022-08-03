@@ -12,7 +12,8 @@ const { TSS_Pages } = require('../../appConfig.json')
 
 
 function App() {
-  const { currentPage } = useContext(TSSContext)
+  const { currentPage, cartList } = useContext(TSSContext);
+  console.log("Items in cart:", cartList)
 
   const isHomePageSelected = currentPage === TSS_Pages.Home
   const isProductsPageSelected = currentPage === TSS_Pages.Products
