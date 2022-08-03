@@ -29,7 +29,7 @@ function NavBar() {
         onClick={handleBrandSelection}
       >
         <span className="brand-icon">
-          <FontAwesomeIcon icon={["fas", "store-alt"]} />
+          <FontAwesomeIcon icon={["fas", "seedling"]} />
         </span>
         <span className="brand-name">Twinlande</span>
       </Navbar.Brand>
