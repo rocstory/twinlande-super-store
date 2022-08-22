@@ -25,7 +25,7 @@ function NavBar() {
       className="nav-wrapper justify-content-center"
     >
       <Navbar.Brand
-        className="twinlande-brand"
+        className="twinlande-brand clickable"
         onClick={handleBrandSelection}
       >
         <span className="brand-icon">

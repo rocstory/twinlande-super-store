@@ -12,7 +12,7 @@ function Cart() {
 
   const totalItemsInCart = (cartList.length <= 9) ? cartList.length : '9+';
   return (
-    <Nav.Item className="user-option cart">
+    <Nav.Item className="user-option cart clickable">
 
       <div className="uo-icon-wrapper cart-wrapper">
         <span className="uo-icon">

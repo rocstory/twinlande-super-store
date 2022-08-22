@@ -1,7 +1,8 @@
-.notifications-container{
+.notifications-container {
     width: 32em;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, 13em);
     column-gap: 1em;
+    row-gap: 1em;
 }

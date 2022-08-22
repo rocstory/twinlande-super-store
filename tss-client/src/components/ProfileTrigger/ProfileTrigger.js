@@ -8,7 +8,7 @@ function ProfileTrigger() {
 
     return (
 
-        <Nav.Item className="user-option profile">
+        <Nav.Item className="user-option profile clickable">
             <div className="uo-icon-wrapper profile-wrapper">
                 <span className="uo-icon">
                     <FontAwesomeIcon icon={['fas', 'user-alt']} />
