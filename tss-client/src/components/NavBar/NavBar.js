@@ -25,11 +25,11 @@ function NavBar() {
       className="nav-wrapper justify-content-center"
     >
       <Navbar.Brand
-        className="twinlande-brand"
+        className="twinlande-brand clickable"
         onClick={handleBrandSelection}
       >
         <span className="brand-icon">
-          <FontAwesomeIcon icon={["fas", "store-alt"]} />
+          <FontAwesomeIcon icon={["fas", "seedling"]} />
         </span>
         <span className="brand-name">Twinlande</span>
       </Navbar.Brand>

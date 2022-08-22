@@ -6,11 +6,13 @@ import { TSSContext } from "../../contexts/TSSContext";
 import "./CartTrigger.css";
 
 function Cart() {
-  const { itemsInCart } = useContext(TSSContext)
+  const {
+    cartList
+  } = useContext(TSSContext)
 
-  const totalItemsInCart = (itemsInCart.length <= 9) ? itemsInCart.length : '9+';
+  const totalItemsInCart = (cartList.length <= 9) ? cartList.length : '9+';
   return (
-    <Nav.Item className="user-option cart">
+    <Nav.Item className="user-option cart clickable">
 
       <div className="uo-icon-wrapper cart-wrapper">
         <span className="uo-icon">
