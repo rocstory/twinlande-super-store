@@ -1,11 +1,16 @@
 {
     "TSS_Pages": {
         "Home": "Home",
-        "Products": "Products"
+        "Products": "Products",
+        "Checkout": "Checkout"
     },
     "ProductImageCodes": {
         "VideoGame": "video-game",
         "GameAccessory": "game-accessory"
+    },
+    "CheckoutMenus": {
+        "SummaryMenu": "summary",
+        "ConfirmationMenu": "confirmation"
     },
     "MaxStarRating": 5,
     "ReadDataFromDatabase": false

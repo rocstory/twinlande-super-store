@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-// import { TSS_Pages } from '../appConfig.json'
-const appConfig = require('../appConfig.json')
-
+import getConfig from '../helpers/getConfig';
 const TSSContext = React.createContext();
 
 const TSSContextProvider = ({ children }) => {
-    const { TSS_Pages } = appConfig;
+    const TSS_Pages = getConfig('TSS_Pages');
     const [itemsInCart, setItemsInCart] = useState([]);
     const [selProductCategory, setSelProductCategory] = useState(undefined)
-    const [currentPage, setCurrentPage] = useState(TSS_Pages.Home);
+    const [currentPage, setCurrentPage] = useState(TSS_Pages.Checkout);
     const [cartList, setCartList] = useState([]);
 
     return (
