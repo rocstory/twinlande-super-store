@@ -2,13 +2,12 @@
 import { useContext } from "react";
 
 import { TSSContext } from '../../../contexts/TSSContext';
-
-const productService = require('../../../services/product');
+import { getProductImage } from "../../../services/product";
 
 function useProduct(product) {
     const { setCartList } = useContext(TSSContext)
     // const [prodImage, setProdImage] = useState(undefined);
-    const prodImage = productService.getProductImage(product.category)
+    const prodImage = getProductImage(product.category)
 
     const handleAddToCart = (selProduct) => {
         console.log("Adding selProduct to cart:", selProduct)
