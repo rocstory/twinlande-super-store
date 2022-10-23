@@ -3,10 +3,10 @@ import { TSSContext } from "../../contexts/TSSContext";
 import InCartTable from "../InCartTable/InCartTable";
 import "./CheckoutSummaryMenu.scss"
 
-function CheckoutSummaryMenu() {
-    const {
-        cartList
-    } = useContext(TSSContext)
+const CheckoutSummaryMenu = () => {
+    // const {
+    //     cartList
+    // } = useContext(TSSContext)
 
     const totalItems = 12
     const subtotal = 1290
