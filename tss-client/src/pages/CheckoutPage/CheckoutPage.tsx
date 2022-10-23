@@ -1,5 +1,6 @@
 import { useState } from "react";
-import CheckoutSummaryMenu from "../../components/CheckoutSummaryMenu/CheckoutSummaryMenu"
+import CheckoutSummaryMenu from "../../components/CheckoutSummaryMenu/CheckoutSummaryMenu";
+
 import getConfig from "../../helpers/getConfig";
 
 

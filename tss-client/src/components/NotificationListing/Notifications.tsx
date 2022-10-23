@@ -11,22 +11,22 @@ function Notifications() {
   return (
     <div className="notifications-container">
       <Notification
-        heading="More parking spots!"
+        headingTitle="More parking spots!"
         imgSrc={parkingSpacesNotificationImg}
         description="We have more parking spaces! No more struggling to find parking."
       />
       <Notification
-        heading="New plants are in!"
+        headingTitle="New plants are in!"
         imgSrc={newPlantsNotificationImg}
         description="New plants for your home are now here!"
       />
       <Notification
-        heading="Join our Twinlande team!"
+        headingTitle="Join our Twinlande team!"
         imgSrc={nowHiringNotificationImg}
         description="Check out the Careers page and apply!"
       />
       <Notification
-        heading="Hello Paw Bytes restaurant!"
+        headingTitle="Hello Paw Bytes restaurant!"
         imgSrc={pawbytesNotificationImg}
         description="A mini Paw Bytes restaurant is coming into our stores!"
       />

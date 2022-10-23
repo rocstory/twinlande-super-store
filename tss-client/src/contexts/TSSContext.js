@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import getConfig from '../helpers/getConfig';
-const TSSContext = React.createContext();
 
-const TSSContextProvider = ({ children }) => {
+export const TSSContext = React.createContext();
+
+export const TSSContextProvider = ({ children }) => {
     const TSS_Pages = getConfig('TSS_Pages');
     const [itemsInCart, setItemsInCart] = useState([]);
     const [selProductCategory, setSelProductCategory] = useState(undefined)
@@ -21,5 +22,5 @@ const TSSContextProvider = ({ children }) => {
     )
 }
 
-export { TSSContext, TSSContextProvider }
+// export { TSSContext, TSSContextProvider }
 

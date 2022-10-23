@@ -1,15 +1,20 @@
 import React from "react";
 
 import "./Notification.css";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
+import {Card} from "react-bootstrap";
+
+interface INotification {
+    headingTitle: string,
+    imgSrc: string,
+    description: string
+}
 
 
-
-function Notification({heading, imgSrc, description}) {
+const Notification = ({headingTitle, imgSrc, description}: INotification) => {
 
     return (
         <Card
-            variant="none"
             className="notification" 
         >
             <Card.Img 
@@ -20,7 +25,7 @@ function Notification({heading, imgSrc, description}) {
             <Card.ImgOverlay
                 className="description-container"
             >
-                <Card.Title className="title">{heading}</Card.Title>
+                <Card.Title className="title">{headingTitle}</Card.Title>
                 <Card.Text className="description">
                     {description}
                 </Card.Text>

@@ -4,7 +4,11 @@ import {  Image } from "react-bootstrap";
 import { getProductImage } from "../../../services/product";
 import "./InCartItem.scss"
 
-function InCartItem({ item }) {
+interface IInCartItem {
+    item: any
+}
+
+function InCartItem({ item }:IInCartItem) {
 
     const itemImgSrc = getProductImage();
 
@@ -18,7 +22,7 @@ function InCartItem({ item }) {
                 >
                     <div
                         className="item-img-wrapper"
-                        xs
+                        
                     >
                         <Image src={itemImgSrc} fluid />
                     </div>

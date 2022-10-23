@@ -1,17 +1,19 @@
 import React from "react";
 import Card from "react-bootstrap/esm/Card";
 import Button from "react-bootstrap/esm/Button";
-// import { MaxStarRating } from "../../../appConfig.json";
+import appConfig from "../../../appConfig.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useProduct from "./useProduct";
+import { IProduct } from "../useProductDisplay";
+import { getFormattedCurrency } from "../../../helpers/product";
 import "./Product.css";
 
-const appConfig = require('../../../appConfig.json')
-const productHelper = require('../../../helpers/product');
+interface IProductCmpt {
+    product: IProduct
+}
 
 
-
-function Product({ product }) {
+function Product({ product } : IProductCmpt) {
     const { MaxStarRating } = appConfig
     const {
         name,
@@ -19,7 +21,7 @@ function Product({ product }) {
         rating
     } = product
 
-    const formattedPrice = productHelper.getFormattedCurrency(price);
+    const formattedPrice = getFormattedCurrency(price);
 
     const {
         prodImage,
