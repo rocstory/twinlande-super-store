@@ -1,11 +1,18 @@
 import { useContext } from "react";
 import { TSSContext } from "../../contexts/TSSContext";
 import { Table } from "react-bootstrap"
+import InCartItem from "./InCartItem/InCartItem";
+// import "./InCartTable.scss"
+
+
 
 function InCartTable() {
     const {
         cartList
     } = useContext(TSSContext)
+
+    let items = ['a','b','c'] // cartList
+
 
     return (
         <div className="incart-display">
@@ -17,24 +24,9 @@ function InCartTable() {
                 </thead>
                 <tbody>
                     {
-                        // cartList.map(item => <InCartItem />)
+                        items.map(item => <InCartItem key={item} item={item} />)
                     }
-                    <tr>
-                        <td>Item 1</td>
-                    </tr>
-                    <tr>
-                        <td>Item 2</td>
-                    </tr>
-                    <tr>
-                        <td>Item 3</td>
-                    </tr>
-                    <tr>
-                        <td>Item 4</td>
-                    </tr>
-                    <tr>
-                        <td>Item 5</td>
-                    </tr>
-
+                    
                 </tbody>
 
             </Table>

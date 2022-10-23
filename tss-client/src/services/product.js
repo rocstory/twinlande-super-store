@@ -13,7 +13,7 @@ const { ProductImageCodes } = require('../appConfig.json')
 
 const categoryImgTable = require("../dataStore/categoryImgTable.json")
 
-export function getProductImage(categoryCode) {
+export function getProductImage(categoryCode = "default") {
     const imageToShow = getProductImageCode(categoryCode);
 
     const {

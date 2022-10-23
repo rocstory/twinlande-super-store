@@ -12,7 +12,7 @@ function useProduct(product: IProduct) {
 
     const handleAddToCart = (selProduct: IProduct) => {
         console.log("Adding selProduct to cart:", selProduct)
-        // setCartList((prevCartList: any) => [...prevCartList, selProduct])
+        setCartList((prevCartList: any) => [...prevCartList, selProduct])
     }
 
     return {
