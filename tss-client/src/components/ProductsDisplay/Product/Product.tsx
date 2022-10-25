@@ -5,8 +5,8 @@ import appConfig from "../../../appConfig.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useProduct from "./useProduct";
 import { IProduct } from "../useProductDisplay";
-import { getFormattedCurrency } from "../../../helpers/product";
 import "./Product.css";
+import { toCurrency } from "../../../helpers/toCurrency";
 
 interface IProductCmpt {
     product: IProduct
@@ -21,7 +21,8 @@ function Product({ product } : IProductCmpt) {
         rating
     } = product
 
-    const formattedPrice = getFormattedCurrency(price);
+    // const formattedPrice = getFormattedCurrency(price);
+    const formattedPrice = toCurrency(price);
 
     const {
         prodImage,

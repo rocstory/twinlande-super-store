@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { TSSContext } from "../../contexts/TSSContext";
+import { toCurrency } from "../../helpers/toCurrency";
 import InCartTable from "../InCartTable/InCartTable";
 import "./CheckoutSummaryMenu.scss"
 
@@ -9,27 +10,22 @@ const CheckoutSummaryMenu = () => {
     // } = useContext(TSSContext)
 
     const totalItems = 12
-    const subtotal = 1290
+    const subtotal = toCurrency(1290)
 
     return (
         <div className="summary-menu container">
-            <div
-                className="row"
-            >
-                <div className="subtotal container">
-                    <div className="row">
-                        {`Cart (${totalItems} items)`}
-                    </div>
-                    <div className="row">
-                        <span>{subtotal}</span> subtotal
-                    </div>
+            <div className={`summary-header row`}>
+                <div className={`cart-count`}>
+                    Cart
+                    (<span>{totalItems} items</span>)
+                </div>
+                <div className={`subtotal`}>
+                    <span>{subtotal}</span> subtotal
                 </div>
             </div>
-            <div
-                className="row summary-container"
-            >
+            
+            <div className="summary-container">
                 <InCartTable />
-
             </div>
 
         </div>
