@@ -1,0 +1,62 @@
+
+$btn-size: 1.6em;
+$input-form-width: 1em;
+$input-form-height: 1.35em; 
+
+.item-counter-wrapper {
+    border: 1px solid #B6B7B8;
+    border-radius: 2em;
+    background-color: #F4F7FA;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+    
+    padding: 0.18em;
+    width: 8em;
+    height: 2.2em;
+    
+    .itm-count-form {
+        margin-top: auto;
+        width: 3.8em;
+        height: 1.5em;
+        input {
+            height: $input-form-height;
+            text-align: center;
+        }
+    }
+
+    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+
+    button {
+        background: transparent;
+        border: none;
+        border-radius: 100%;
+        height: $btn-size; 
+        width: $btn-size;
+        padding: 0;
+        
+        span {
+            text-align: center;
+            color: gray;
+            font-size: 1em;
+            margin: auto;
+        }
+    }
+
+    button:hover, button:active {
+        background: #2b8069 !important;
+
+        span {
+            color: #f8f8f8 !important;
+        }
+    }
+}

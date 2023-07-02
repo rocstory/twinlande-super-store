@@ -1,7 +1,10 @@
 $table-bg-color: #F2F2F2;
 
 .incart-display {
-    border: 2px solid red;
+    border: 2px solid #212529;;
+    thead {
+        border-bottom: 1px solid #212529;
+    }
 
     .brand-icon {
         color: #2b8069;
